@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Grades{
+    public static void OfRides(int Hurl,int Spin,int Speed){
+        if(Hurl>50 && Spin>60 &&Speed >100){
+            System.out.println("10");
+        }
+        else if(Hurl>50 && Spin>60 && Speed<100){
+            System.out.println("9");
+        }
+        else if(Hurl<50 && Spin>60 && Speed>100){
+            System.out.println("8");
+        }
+        else if(Hurl>50 && Spin<60 && Speed>100){
+            System.out.println("7");
+        }
+        else if(Hurl>50 || Spin>60 || Speed>100  ){
+            System.out.println("6");
+        }
+        else {
+            System.out.println("5");
+        }
+        
+    }
+    public static void main(String args[]){
+        int x,y,z;
+        Scanner sc= new Scanner(System.in);
+        x=sc.nextInt();
+        y=sc.nextInt();
+        z=sc.nextInt();
+        Grades.OfRides(x,y,z);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
